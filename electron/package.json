@@ -12,12 +12,9 @@
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
-  "author": {
-    "name": "Aleksandar Panic",
-    "email": "arekusanda1@gmail.com"
-  },
   "license": "MIT",
   "dependencies": {
+    "angular-electron-poc-root": "file:..",
     "electron-squirrel-startup": "^1.0.1"
   },
   "devDependencies": {
@@ -29,8 +26,7 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.8.3",
     "@electron-forge/plugin-fuses": "^7.8.3",
     "@electron/fuses": "^1.8.0",
-    "electron": "37.3.1",
-    "backend": "file:../backend"
-    
+    "backend": "file:../backend",
+    "electron": "37.3.1"
   }
 }
