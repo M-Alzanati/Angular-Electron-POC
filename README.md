@@ -18,6 +18,18 @@ In development mode (when no `electron/src/dist` folder is present) it serves fr
 2. Go to frontend and start it with `npm start`
 3. Go to electron and start it with `npm start`
 
+Or, from the project root you can install and run everything together:
+
+1. Install dependencies for all subprojects:
+
+	npm run install:all
+
+2. Start backend, frontend and electron together (single command):
+
+	npm run start:all
+
+This uses `concurrently` via npx to launch the three processes and keeps them alive; stop with Ctrl+C.
+
 ## Development
 
 During development you can use standard backend as a normal server by running `npm start` in `backend` folder.

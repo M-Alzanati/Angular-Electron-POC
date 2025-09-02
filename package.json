@@ -1,0 +1,15 @@
+{
+  "name": "angular-electron-poc-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend && npm install --prefix electron",
+    "start:backend": "npm --prefix backend start",
+    "start:frontend": "npm --prefix frontend start",
+    "start:electron": "npm --prefix electron start",
+    "start:all": "npx concurrently -k \"npm --prefix backend start\" \"npm --prefix frontend start\" \"npm --prefix electron start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
